@@ -13,7 +13,7 @@ bearer_token = os.getenv('BEARER_TOKEN')
 client = tweepy.Client(bearer_token)
 
 # IEX Cloud API credentials
-iex_api_key = os.getenv('IEX_API_KEY')  # Make sure you set this in your .env file
+iex_api_key = os.getenv('IEX_API_KEY')
 
 def fetch_tweets(query, max_results=100):
     if not query or not query.strip():
